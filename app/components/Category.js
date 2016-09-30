@@ -2,7 +2,7 @@ import React from 'react'
 
 function Category({name, description, image}) {
 	return (
-		<div className='col-sm-6 col-md-4'>
+		<div className='col-sm-6'>
 			<div className='thumbnail'>
 				<img className='img-responsive img-rounded' src={image} />
 				<div className='caption'>
