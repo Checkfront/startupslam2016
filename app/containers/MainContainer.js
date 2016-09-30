@@ -12,12 +12,12 @@ class MainContainer extends Component {
 
 	render() {
 		return (
-			<div className="container-fluid">
+			<div className="container">
 				<div className="jumbotron">
 					<h1>Sweet Tours!</h1>
 					<p></p>
 				</div>
-				<CategoryContainer />	
+				<CategoryContainer />
 			</div>
 		)
 	}
