@@ -1,0 +1,22 @@
+var numbers = [2, 4, 1, 7] 
+numbers.reduce(function (previous, current) {
+	return previous + current
+})
+
+
+
+
+
+<BeerButton
+	onToggleHighlight={this.handleToggleHighlight}
+	highlight={this.state.highlight}
+>
+	{this.state.buttonText}
+</BeerButton>
+
+this.setState({
+	highlight: !this.state.highlight,
+	buttonText: this.state.buttonText == 'Add highlight'
+		? 'Remove highlight'
+		: 'Add highlight'
+})

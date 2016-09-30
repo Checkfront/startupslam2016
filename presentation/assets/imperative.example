@@ -1,0 +1,22 @@
+var numbers = [2, 4, 1, 7]
+var total = 0
+for(var index = 0; i < numbers.length; i++) {
+	total += numbers[i]
+}
+
+
+
+
+
+
+
+
+
+
+
+$('#beer-btn').click(function() {
+	$(this).toggleClass('highlight')
+	$(this).text() == 'Add highlight'
+		? $(this).text('Remove highlight')
+		: $(this).text('Add highlight')
+})
