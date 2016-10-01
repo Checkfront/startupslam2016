@@ -4,7 +4,7 @@ const imageStyles = {
 	borderRadius: '6px'
 }
 
-function Category({name, description, image}) {
+function Category({name, description, image, items, onClickCategory}) {
 	return (
 		<div className='col-sm-6'>
 			<div className='thumbnail'>
@@ -12,7 +12,7 @@ function Category({name, description, image}) {
 				<div className='caption'>
 					<h3>{name}</h3>
 					<p>{description}</p>
-					<button className='btn btn-primary'>View Tours</button>
+					<button className='btn btn-primary' onClick={() => onClickCategory(items)}>View Tours</button>
 				</div>
 			</div>
 		</div>

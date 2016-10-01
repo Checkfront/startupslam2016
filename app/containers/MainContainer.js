@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import CategoryContainer from './CategoryContainer'
+import ItemContainer from './ItemContainer'
 
 class MainContainer extends Component {
 	constructor() {
 		super()
 
 		this.state = {
-
+			items: [],
 		}
+	}
+
+	handleClickCategory(items) {
+		this.setState({
+			items,
+		})
 	}
 
 	render() {
@@ -17,7 +24,12 @@ class MainContainer extends Component {
 					<h1>Sweet Tours!</h1>
 					<p></p>
 				</div>
-				<CategoryContainer />
+				<CategoryContainer 
+					handleClickCategory={(items) => this.handleClickCategory(items)}
+				/>
+				<ItemContainer 
+					items={this.state.items}
+				/>
 			</div>
 		)
 	}
