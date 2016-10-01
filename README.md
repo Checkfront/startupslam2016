@@ -17,7 +17,10 @@ Obtain a basic understanding of components, be able to use and build simple web 
 * [Cloning Repo](#clone-repo)
 * [Install and familiarize yourself with tools](#install)
 * [Understand tools used in scaffolding](#tools)
-* Additional Tasks to come
+* Create ItemsContainer Component
+* Create Item Component
+* Hook up category button event handler
+* Filter items based on selected category
 
 ### Clone Repo
 ```sh
